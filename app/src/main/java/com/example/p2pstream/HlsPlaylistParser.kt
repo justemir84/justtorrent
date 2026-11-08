@@ -69,7 +69,7 @@ class HlsPlaylistParser {
     }
 
     private fun resolveUrl(base: String, relative: String): String =
-        try { URI(base).resolve(relative).toString() } catch (_: Exception) { relative }
+        try { URI(base).resolve(relative).toString() } catch (e: Exception) { relative }
 }
 
 class MasterPlaylistException(val variantUrl: String) : Exception("Master playlist")
