@@ -86,7 +86,8 @@ class MainActivity : AppCompatActivity() {
             addView(statusText)
             layoutParams = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WEIGHT_BUBBLE
+                0,
+                1f
             )
         }
 
